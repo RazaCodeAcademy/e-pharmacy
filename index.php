@@ -36,43 +36,23 @@
 
   <!-- cards starts -->
 
-    <div class="container-fluid">
+    <div class="container my-5">
       <div class="row">
-        <div class="col-md-3">
-          <div class="card my-5">
-            <img class="card-img-top" src="./assets/images/cards/card-1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <h2 class="border-bottom">Your Patient Advocates</h2>
+          <p>
+            We are an advocacy group that provides the proper applications and paper work for the patient assistance program of your choice. We gather your information via an initial consultation and pre-fill your application. Patient assistance programs are put in place to allow those who qualify to receive brand-name medication based on FPL income guidelines.
+          </p>
+          <p>
+            You can have your prescription delivered right to your door with no hassle and at a cost that you can afford. Our team of advocates is here to relieve your stress and help you continue your lifestyle without any added burden
+          </p>
         </div>
-        <div class="col-md-3">
-          <div class="card my-5">
-            <img class="card-img-top" src="./assets/images/cards/card-1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card my-5">
-            <img class="card-img-top" src="./assets/images/cards/card-1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card my-5">
-            <img class="card-img-top" src="./assets/images/cards/card-1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <img src="./assets/images/cards/card-5.png" alt="">
         </div>
       </div>
     </div>
-
+ 
   <!-- cards ends -->
 
 <!-- footer include -->
