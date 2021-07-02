@@ -8,12 +8,16 @@
         // fetch all data for managers
         public function index()
         {
-            $query="select * from users order by id desc";
+            $query="select COUNT(*) as managers from users where role=2";
             $run = mysqli_query($this->conn, $query);
             $result = [];
-            while($row = mysqli_fetch_array($run)){
-                $result[] = $row;
-            }
+            $row = mysqli_fetch_array($run);
+            $managers = $row['managers'];
+                // $result[] = $row['managers'];
+
+                array_push($result, $managers);
+                array_push($result, $managers);
+            
             return $result;
         }
 

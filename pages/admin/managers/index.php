@@ -52,7 +52,7 @@
                         <td><?php echo $manager['phone'] ?></td>
                         <td>
                             <div class="d-flex">
-                            <a href="./edit.php?update=1&id=<?php echo $manager['id']; ?>" class="btn btn-primary mx-1">Edit</a>
+                            <a href="./edit.php?id=<?php echo $manager['id']; ?>" class="btn btn-primary mx-1">Edit</a>
                             <a href="./action.php?delete=1&id=<?php echo $manager['id']; ?>" class="btn btn-danger mx-1">Delete</a>
                             </div>
                         </td>

@@ -1,4 +1,4 @@
-<title>Manager | Create</title>
+<title>Manager | Update</title>
 <!-- header include -->
 <?php include '../../../layouts/admin/header.php' ?>
 
@@ -11,7 +11,8 @@
 
     $man = new Manager();
 
-    $manager = $man->index();
+    $manager = $man->edit($_GET['id']);
+
 ?>
 
 
@@ -23,6 +24,7 @@
         <div class="container">
             <div class="row">
                 <form action="action.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<?php echo $manager['id']; ?>">
                     <div class="col-md-12 my-4">
                         <div class="form-group">
                             <label for="">Enter Name</label>
@@ -32,29 +34,33 @@
                     <div class="col-md-12 my-4">
                         <div class="form-group">
                             <label for="">Enter Email</label>
-                            <input type="email" class="form-control" name="email" placeholder="Email...">
+                            <input type="email" value="<?php echo $manager['email']; ?>" class="form-control" name="email" placeholder="Email...">
                         </div>
                     </div>
                     <div class="col-md-12 my-4">
                         <div class="form-group">
                             <label for="">Enter Phone</label>
-                            <input type="number" class="form-control" name="phone" placeholder="Phone...">
+                            <input type="number" value="<?php echo $manager['phone']; ?>" class="form-control" name="phone" placeholder="Phone...">
                         </div>
+                    </div>
+                    <div class="col-md-12 my-4">
+                    <img src="<?php echo '../../../assets/images/uploads/'. $manager['image']; ?>" class="img-fluid w-25" alt="">
                     </div>
                     <div class="col-md-12 my-4">
                         <div class="form-group">
                             <label for="">Choose Image</label>
+                            <input type="hidden" class="form-control" name="prev_image" value="<?php echo $manager['image']; ?>" placeholder="Image...">
                             <input type="file" class="form-control" name="image" placeholder="Image...">
                         </div>
                     </div>
                     <div class="col-md-12 my-4">
                         <div class="form-group">
                             <label for="">Enter Password</label>
-                            <input type="password" class="form-control" name="password" placeholder="Password...">
+                            <input type="password" class="form-control" value="<?php echo $manager['password']; ?>" name="password" placeholder="Password...">
                         </div>
                     </div>
                     <div class="col-md-12 my-4 text-center">
-                        <input type="submit" class="btn btn-primary px-5 mt-5" name="btn_save" value="Submit">
+                        <input type="submit" class="btn btn-primary px-5 mt-5" name="btn_update" value="Update">
                     </div>
                 </form>
             </div>

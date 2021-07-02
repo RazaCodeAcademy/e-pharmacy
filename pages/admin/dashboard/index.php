@@ -1,9 +1,20 @@
 <title>Admin | Dashboard</title>
 <!-- header include -->
-<?php include '../../../layouts/admin/header.php' ?>
+<!-- <?php include '../../../layouts/admin/header.php' ?> -->
 
 <!-- include sidebar -->
-<?php include '../../../layouts/admin/sidebar.php' ?>
+<!-- <?php include '../../../layouts/admin/sidebar.php' ?> -->
+
+<?php 
+// <!-- include Manager class -->
+    include './action.php'; 
+
+    $man = new Manager();
+
+    $managers = $man->index();
+
+    var_dump($managers);
+?>
 
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
