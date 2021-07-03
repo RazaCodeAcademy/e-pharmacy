@@ -1,19 +1,17 @@
 <title>Admin | Dashboard</title>
 <!-- header include -->
-<!-- <?php include '../../../layouts/admin/header.php' ?> -->
+<?php include '../../../layouts/admin/header.php' ?>
 
 <!-- include sidebar -->
-<!-- <?php include '../../../layouts/admin/sidebar.php' ?> -->
+<?php include '../../../layouts/admin/sidebar.php' ?>
 
 <?php 
-// <!-- include Manager class -->
     include './action.php'; 
 
-    $man = new Manager();
+    $man = new Dashboard();
 
-    $managers = $man->index();
+    $result = $man->index();
 
-    var_dump($managers);
 ?>
 
 
@@ -28,7 +26,7 @@
                     <h2 class="text-center text-white">Total Sell</h2>
                 </div>
                 <div class="col-md-3 bg-info my-2 py-5 border">
-                    <h1 class="text-center text-white">0</h1>
+                    <h1 class="text-center text-white"><?php echo $result['managers'] ?></h1>
                     <h2 class="text-center text-white">Managers</h2>
                 </div>
                 <div class="col-md-3 bg-info my-2 py-5 border">
